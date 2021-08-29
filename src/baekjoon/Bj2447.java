@@ -14,19 +14,17 @@ public class Bj2447 {
 			}
 			sb.append("\n");
 		}
+		System.out.println(sb.toString());
 	}
 	
 	static void print(int x, int y) {
 		while(true) {
 			if(x==0) break;
-			if(x%3 == 1&& y%3 ==1) {
+			if(x%3 == 1 && y%3== 1) {
 				sb.append(" ");
-				return ;
+				return;
 			}
-			x/=3;
-			y/=3;
 		}
-		sb.append("*");
 	}
 
 }
