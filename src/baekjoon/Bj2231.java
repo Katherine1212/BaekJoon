@@ -10,14 +10,14 @@ public class Bj2231 {
 
 		for (int i = 1; i < n; i++) {
 			int num = i;
-			int sum = i;
+			int sum = i; // 각 자릿수 합의 변수
 
 			while (num != 0) {
-				sum += num % 10;
+				sum += num % 10; // 각 자리수 더하기
 				num = num / 10;
 
 			}
-			if (sum == n) {
+			if (sum == n) { // 각 자리수 누적 합이 같을 경우
 				result = i;
 				break;
 			}
